@@ -371,6 +371,76 @@
                 </button>
             </div>
             <div class="px-8 py-8 overflow-y-auto modal-scroll bg-gray-50 flex-1">
+
+<style>
+/*20260303 상단 CEO그룹추가*/
+ul.group_ceo {
+    display: flex;
+    width:100%;
+    gap:1.5rem;
+    margin-bottom:1.5rem;
+}
+
+ul.group_ceo li {
+    width:100%;
+    padding: 1.5rem;
+    background: #ffffff;
+    border:1px solid #d4af37;
+    border-radius: 0.75rem;
+    transition: all 0.1s ease;
+}
+
+ul.group_ceo li:hover {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.07);
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.name span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.name h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color:#0a1128
+}
+
+/* ◆◆◆◆◆◆◆◆◆◆ 1023px이하 ◆◆◆◆◆◆◆◆◆◆ */
+@media only screen and (max-width:1023px){
+/*20260303 상단 CEO그룹추가*/
+ul.group_ceo {
+    display: flex;
+    flex-direction: column;
+}
+
+}
+</style>    
+                
+                <!--추가-->
+                <ul class="group_ceo">
+                    <li>
+                        <div class="name">
+                            <span>회장</span>
+                            <h4>이진충</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="name">
+                            <span>대표이사</span>
+                            <h4>최용수</h4>
+                        </div>
+                    </li>
+                </ul>
+                <!--//추가-->
+                
+                
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-lg transition-all flex flex-col h-full">
                         <div class="text-corporate-gold text-xs font-bold tracking-wider mb-2">DEVELOPMENT & PLANNING</div>
